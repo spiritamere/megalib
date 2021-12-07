@@ -6,7 +6,7 @@
 /*   By: ljourand <ljourand@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 10:38:03 by ljourand          #+#    #+#             */
-/*   Updated: 2021/12/05 16:47:41 by ljourand         ###   ########lyon.fr   */
+/*   Updated: 2021/12/07 13:04:13 by ljourand         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*get_next_line(int fd)
 	char		buffer[BUFFER_SIZE + 1];
 	int			size;
 
-	if (fd < 0)
+	if (fd < 0 || fd > 1024)
 		return (0);
 	if (ft_strchr(text[fd], '\n'))
 		return (ft_read_last_line(&text[fd]));
