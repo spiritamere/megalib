@@ -44,7 +44,7 @@ ${addprefix mem/, ${SRC_MEM}} \
 ${addprefix strs/, ${SRC_STR}}
 OBJS	= ${SRCS:.c=.o}
 NAME	= libft.a
-HEADERS	= libft.h ft_printf/printf.h
+HEADERS	= libft.h ft_printf/printf.h get_next_line/get_next_line.h
 CFLAGS = -Wall -Wextra -Werror
 
 %.o: %.c ${HEADERS} Makefile

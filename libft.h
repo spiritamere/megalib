@@ -6,7 +6,7 @@
 /*   By: ljourand <ljourand@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 14:08:21 by ljourand          #+#    #+#             */
-/*   Updated: 2021/12/06 13:35:00 by ljourand         ###   ########lyon.fr   */
+/*   Updated: 2021/12/07 16:06:21 by ljourand         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-int		ft_free_tab(void **tab, int size);
+int		ft_free_tab(void **tab);
 
 int		ft_printf(const char *format, ...);
 int		ft_dprintf(int fd, const char *format, ...);
