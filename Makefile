@@ -8,6 +8,15 @@ ft_putendl_fd.c \
 ft_putnbr_fd.c \
 ft_putunbr_fd.c
 SRC_GNL = get_next_line.c
+SRC_LST	= ft_lstadd_back.c \
+ft_lstadd_front.c \
+ft_lstclear.c \
+ft_lstdelone.c \
+ft_lstiter.c \
+ft_lstlast.c \
+ft_lstmap.c \
+ft_lstnew.c \
+ft_lstsize.c
 SRC_MEM = ft_bzero.c \
 ft_calloc.c \
 ft_memchr.c \
@@ -40,11 +49,12 @@ ft_toupper.c
 SRCS = ${addprefix free/, ${SRC_FREE}} \
 ${addprefix ft_printf/, ${SRC_PRINTF}} \
 ${addprefix get_next_line/, ${SRC_GNL}} \
+${addprefix lst/, ${SRC_LST}} \
 ${addprefix mem/, ${SRC_MEM}} \
 ${addprefix strs/, ${SRC_STR}}
 OBJS	= ${SRCS:.c=.o}
 NAME	= libft.a
-HEADERS	= libft.h ft_printf/printf.h
+HEADERS	= libft.h ft_printf/printf.h get_next_line/get_next_line.h
 CFLAGS = -Wall -Wextra -Werror
 
 %.o: %.c ${HEADERS} Makefile

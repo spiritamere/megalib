@@ -6,7 +6,7 @@
 /*   By: ljourand <ljourand@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:24:38 by ljourand          #+#    #+#             */
-/*   Updated: 2021/12/06 13:36:59 by ljourand         ###   ########lyon.fr   */
+/*   Updated: 2021/12/11 11:47:01 by ljourand         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,6 @@ int	ft_putnbr_base_fd(long long nb, char *base, int fd)
 		count++;
 	}
 	if (nb >= len)
-		count += ft_putnbr_fd(nb / len, fd);
+		count += ft_putnbr_base_fd(nb / len, base, fd);
 	return (count + ft_putchar_fd(base[nb % len], fd));
 }

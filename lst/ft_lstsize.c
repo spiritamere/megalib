@@ -6,11 +6,11 @@
 /*   By: ljourand <ljourand@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 15:07:06 by ljourand          #+#    #+#             */
-/*   Updated: 2021/11/10 10:48:48 by ljourand         ###   ########lyon.fr   */
+/*   Updated: 2021/12/11 20:03:43 by ljourand         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_lstsize(t_list *lst)
 {

@@ -6,7 +6,7 @@
 /*   By: ljourand <ljourand@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 14:19:04 by ljourand          #+#    #+#             */
-/*   Updated: 2021/12/06 13:36:29 by ljourand         ###   ########lyon.fr   */
+/*   Updated: 2021/12/06 15:41:04 by ljourand         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	ft_printf(const char *format, ...)
 	va_list(pi);
 	va_start(pi, format);
 	ft_init_array(functions);
-	count = ft_iter(format, pi, functions, 1);
+	count = ft_iter((char *)format, pi, functions, 1);
 	va_end(pi);
 	return (count);
 }
@@ -73,7 +73,7 @@ int	ft_dprintf(int fd, const char *format, ...)
 	va_list(pi);
 	va_start(pi, format);
 	ft_init_array(functions);
-	count = ft_iter(format, pi, functions, fd);
+	count = ft_iter((char *)format, pi, functions, fd);
 	va_end(pi);
 	return (count);
 }
